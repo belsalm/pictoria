@@ -59,6 +59,7 @@ const RootNavigator = (props) => {
           : state.user == null ?
             <>
               <Stack.Screen name={routes.GetStarted} component={GetStarted} initialParams={{ t: t, i18n: i18n }} />
+              <Stack.Screen name={routes.Home} component={Home} initialParams={{ t: t, i18n: i18n }} />
             </>
             :
             <>

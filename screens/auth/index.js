@@ -26,13 +26,14 @@ const GetStarted = ({ navigation, route }) => {
                     source={require('../../assets/videos/getStarted.mp4')}
                     rate={1.0}
                     volume={1.0}
-                    muted={false}
+                    muted={true}
                     resizeMode={"cover"}
                     repeat
                     style={styles.video}
                 />
 
             </View>
+
 
             <View style={styles.bodyContainer} >
                 <Text style={[Typography.H2, styles.title]}>{t("Welcome to Pictoria!")}</Text>
@@ -44,7 +45,7 @@ const GetStarted = ({ navigation, route }) => {
                     title={t('Get Started')}
                     tertiary
                     color={Colors.WHITE}
-                    onPress={() => navigation.navigate(routes.Register)} />
+                    onPress={() => navigation.navigate(routes.Home)} />
             </View>
         </LinearGradient>
     );
@@ -60,7 +61,7 @@ const styles = StyleSheet.create({
         left: 0,
         bottom: 0,
         right: 0,
-      },
+    },
     // Body
     HeaderContainer: {
         flex: 0.8,
@@ -72,12 +73,14 @@ const styles = StyleSheet.create({
         shadowOpacity: 0.5,
         shadowRadius: 5,
         elevation: 10,
+        backgroundColor: Colors.WHITE
     },
     bodyContainer: {
         flex: 0.1,
         paddingBottom: 30,
         alignItems: 'center',
         justifyContent: 'flex-end',
+
     },
     title: {
         textAlign: 'center',

@@ -11,12 +11,12 @@ import LinearGradient from 'react-native-linear-gradient';
 const Splash = () => {
     return (
         <LinearGradient colors={[Colors.WHITE, Colors.GRAY_LIGHT, Colors.GRAY]} style={styles.container}>
-                {/* <Lottie
-                    source={require('../../assets/JSON/logo.json')}
+                <Lottie
+                    source={require('../../assets/JSON/camera.json')}
                     speed={1}
                     autoPlay
                     loop
-                /> */}
+                />
         </LinearGradient>
     );
 };
@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
-        // backgroundColor: Colors.BLACK
+        backgroundColor: Colors.WHITE
     },
 });
 
